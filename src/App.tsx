@@ -1,3 +1,5 @@
+import Motto from "./Motto";
+
 export default function App() {
-  return <h1>This is React!</h1>;
+  return <Motto />;
 }

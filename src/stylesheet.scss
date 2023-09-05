@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap");
+
+$white: #ffffff;
+$black: #000000;
+$tessCoat: #bc6238;
+$gray1: #262626;
+$gray2: #58595b;
+$gray3: #3b3b3b;
+$gray4: #b3b3b3;
+
+body {
+  margin: 0;
+  padding: 1rem;
+
+  background-color: $black;
+  color: $white;
+
+  font-family: "Barlow", sans-serif;
+}
+
+.highlight {
+  color: $tessCoat;
+}
