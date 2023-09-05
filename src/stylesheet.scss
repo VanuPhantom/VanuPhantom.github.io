@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap");
+@import "./breakpoints.scss";
 
 $white: #ffffff;
 $black: #000000;
@@ -20,4 +21,36 @@ body {
 
 .highlight {
   color: $tessCoat;
+}
+
+#top-section-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include xl {
+    flex-direction: row;
+
+    & *:first-child {
+      flex-grow: 1;
+    }
+  }
+}
+
+#contact-details {
+  font-size: 1.25rem;
+  background-color: $tessCoat;
+  color: $white;
+  border-radius: 1.25rem;
+  padding: 0.625rem;
+
+  & > h2 {
+    margin: 0;
+  }
+
+  & > ul {
+    list-style: square;
+    margin: 0;
+    padding-left: 1.875rem;
+  }
 }
