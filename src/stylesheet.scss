@@ -25,6 +25,15 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+a {
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .highlight {
   color: $tessCoat;
 }

@@ -4,10 +4,22 @@ export default function Contact() {
       <section id="contact-details">
         <h2>Get in touch</h2>
         <ul>
-          <li>tess.e.duursma@gmail.com</li>
-          <li>@VanuPhantom on Twitter</li>
-          <li>github.com/thomasio101</li>
-          <li>github.com/VanuPhantom</li>
+          <li>
+            <a href="mailto:tess.e.duursma@gmail.com">
+              tess.e.duursma@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/VanuPhantom">
+              @VanuPhantom on Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/thomasio101">github.com/thomasio101</a>
+          </li>
+          <li>
+            <a href="https://github.com/VanuPhantom">github.com/VanuPhantom</a>
+          </li>
         </ul>
       </section>
     </div>
