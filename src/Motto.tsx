@@ -68,7 +68,7 @@ export default function Motto() {
   }, []);
 
   return (
-    <h1>
+    <h1 id="motto">
       I BUILD <span className="highlight">{mottoEnding}</span>
     </h1>
   );

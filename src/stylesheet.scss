@@ -9,6 +9,12 @@ $gray2: #58595b;
 $gray3: #3b3b3b;
 $gray4: #b3b3b3;
 
+@mixin main {
+  @include xl {
+    max-width: calc(70vw - 0.625rem - 1.25rem);
+  }
+}
+
 body {
   margin: 0;
   padding: 1rem;
@@ -23,34 +29,35 @@ body {
   color: $tessCoat;
 }
 
-#top-section-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @include xl {
-    flex-direction: row;
-
-    & *:first-child {
-      flex-grow: 1;
-    }
-  }
+#motto,
+#intro,
+#filler {
+  @include main;
 }
 
-#contact-details {
-  font-size: 1.25rem;
-  background-color: $tessCoat;
-  color: $white;
-  border-radius: 1.25rem;
-  padding: 0.625rem;
-
-  & > h2 {
-    margin: 0;
+#contact-details-container {
+  @include xl {
+    position: fixed;
+    width: calc(30vw - 0.625vw - 1.25rem);
+    right: 1.25rem;
+    top: 1.25rem;
   }
 
-  & > ul {
-    list-style: square;
-    margin: 0;
-    padding-left: 1.875rem;
+  #contact-details {
+    font-size: 1.25rem;
+    background-color: $tessCoat;
+    color: $white;
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+
+    & > h2 {
+      margin: 0;
+    }
+
+    & > ul {
+      list-style: square;
+      margin: 0;
+      padding-left: 1.875rem;
+    }
   }
 }
