@@ -68,8 +68,11 @@ export default function Motto() {
   }, []);
 
   return (
-    <h1 id="motto">
-      I BUILD <span className="highlight">{mottoEnding}</span>
-    </h1>
+    <section id="motto">
+      <h1>
+        I BUILD <span className="highlight">{mottoEnding}</span>
+      </h1>
+      <h3>- Tess Ellenoir Duursma</h3>
+    </section>
   );
 }
