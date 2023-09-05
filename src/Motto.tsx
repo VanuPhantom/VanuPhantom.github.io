@@ -32,7 +32,7 @@ export default function Motto() {
       let mottoEndingIndex = 0;
       let mottoEndingInternal = mottoEndings[mottoEndingIndex];
 
-      await wait(1500);
+      await wait(750);
 
       while (mottoEndingInternal !== mottoEndings[mottoEndings.length - 1]) {
         await wait(1000 / mottoEndings[mottoEndingIndex].length);
