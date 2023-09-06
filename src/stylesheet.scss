@@ -15,6 +15,10 @@ $gray4: #b3b3b3;
   }
 }
 
+@mixin rounded {
+  border-radius: 1.25rem;
+}
+
 body {
   margin: 0;
   padding: 1rem;
@@ -46,7 +50,7 @@ img {
   @include main;
 
   & > img {
-    border-radius: 1.25rem;
+    @include rounded;
   }
 
   #motto {
@@ -72,8 +76,43 @@ img {
   }
 }
 
-#filler {
+#skills {
   @include main;
+  @include rounded;
+  background-color: $gray3;
+  padding: 0.625rem;
+  margin-top: 1.25rem;
+
+  & > h2 {
+    margin: 0;
+  }
+
+  & > :nth-child(2) {
+    & h3 {
+      color: $tessCoat;
+      margin-top: 0.625rem;
+      margin-bottom: 0;
+    }
+
+    & div {
+      margin: 0;
+
+      max-width: 100%;
+
+      @include lg {
+        max-width: 50%;
+      }
+
+      @include xl {
+        max-width: calc(100% / 3);
+      }
+    }
+
+    @include lg {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
 }
 
 #contact-details-container {
@@ -88,8 +127,9 @@ img {
     font-size: 1.25rem;
     background-color: $tessCoat;
     color: $white;
-    border-radius: 1.25rem;
     padding: 0.625rem;
+
+    @include rounded;
 
     & > h2 {
       margin: 0;
